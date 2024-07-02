@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* custom.css */
+/* Styles for the main layout */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .flex-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+.flex-item {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .flex-item {
+        width: 50%;
+        margin-left: 1.5rem; /* 24px */
+    }
+}
+
+.apartment-image {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .apartment-image {
+        width: 50%;
+    }
+}
+
+.apartment-details {
+    margin-top: 1.5rem; /* 24px */
+}
+
+#calendar {
+    margin-top: 2rem; /* 32px */
+}
+
+/* Modal styles */
+#reservationModal {
+    z-index: 10;
+    position: fixed;
+    inset: 0;
+    overflow-y: auto;
+    display: none;
+}
+
+/* Add more modal styles as needed */

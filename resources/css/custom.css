@@ -1,0 +1,73 @@
+/* Text and Colors */
+body {
+    font-family: 'Figtree', sans-serif;
+    color: #333;
+
+}
+
+#apartment-location {
+    color: #2d3748;
+}
+
+#apartment-price,
+#apartment-persons {
+    color: #718096;
+}
+
+/* Borders and Margins */
+#apartment-image img {
+    border: 2px solid #e2e8f0;
+    margin: 10px 0;
+}
+
+#reservation-form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #cbd5e0;
+    border-radius: 10px;
+}
+
+/* Flexbox Layout */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#apartment-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid-item {
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+/* Positioning */
+#reservationModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+}
+
+/* Overflow and Z-index */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.z-index-high {
+    z-index: 100;
+}
